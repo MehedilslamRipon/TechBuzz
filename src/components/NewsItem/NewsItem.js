@@ -21,7 +21,9 @@ const NewsItem = ({ newsState }) => {
                   <p>
                      {points} points by {author} | {num_comments} comments
                   </p>
-                  <a href={url}> Read More </a>{' '}
+                  <a target="_blank" rel="noreferrer" href={url}>
+                     Read More
+                  </a>
                   <button onClick={() => removeItem(objectID)}> Remove </button>
                </div>
             );
